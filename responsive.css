@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justiy-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+}
+
+svg {
+    border: solid 2px #fff;
+    max-height: 80vh;
+    max-width: 80vh;
+}
