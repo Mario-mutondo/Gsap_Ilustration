@@ -1,3 +1,5 @@
+import {gsap} from "./node_modules/gsap/index.js"
+
 gsap.to(".rect", {
     duration: 1,
     x: 100,//animate across the entire svg
