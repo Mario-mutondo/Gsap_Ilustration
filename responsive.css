@@ -1,9 +1,11 @@
 body {
     display: flex;
-    justiy-content: space-between;
+    /* justify-content: space-around; */
     align-items: center;
     min-height: 100vh;
     background: #000000;
+    overflow: scroll;
+    flex-direction: column
 }
 
 svg {
@@ -22,6 +24,8 @@ svg {
     border: solid 2px white;
     width: 70vw;
     height: 70vh;
+    margin: 5px 10px 20px 7px;
+    container-type: inline-size;
 }
 .blue {
     opacity: 0;
@@ -41,3 +45,8 @@ svg {
     border-radius: 50%;
     /* z-index: -999; */
 }
+
+.container--large {
+    width: 60vw;
+}
+
