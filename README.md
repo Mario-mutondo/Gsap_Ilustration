@@ -1,11 +1,6 @@
 # Gsap_Ilustration
 
-##gsap ilustration and "responsive",
+![](./hero-logo.svg)
+[GSAP](https://greensock.com/gsap/) is a robust JavaScript toolset that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects... anything JavaScript can touch!
 
-first create your account on gsap website https://greensock.com/gsap/
-install the gsap package on your machine using npm 
-to install gsap package create new file on your root project called .npmrc 
-and follow the instruction on gsap website
-install npm on your computer here https://nodejs.org/en/download
-
-after that you can open the responsive.html on your browser
+this small project ilustrate what we can do with [GSAP](https://greensock.com/gsap/), so you can see the result access the [gist_of_this_project](example.com)
