@@ -1,131 +1,133 @@
 * {
-    box-size: border-size;
-}
-
-html, body {
+    box-sizing: border-box;
+  }
+  
+  html, body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     font-weight: 300;
     font-size: 1.15em;
-    font-family: "Signika Negative", sans-serif;
-}
-
-body {
+    font-family: "Signika Negative", sans-serif, Arial;
+  }
+  
+  body {
     background-image: linear-gradient(to bottom right, #444, #222);
     color: #ccc;
-}
-
-strong {
+  }
+  
+  strong {
     color: white;
     font-size: 1.15em;
-}
-
-.window {
+  }
+  
+  .window {
     position: relative;
     height: 70vh;
     width: 40vw;
-    border-top: 2rem solid #c4c7c8;
+    border-top: 2rem solid #C4C7C8;
     border-radius: .5rem;
     background-color: #fff;
     box-shadow: 0 0 5vw 0 rgba(black, 0.2);
     overflow: hidden;
-}
-
-body, section {
+  }
+  
+  body, section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-#flip {
+  }
+  
+  #flip {
     width: 100%;
-}
-
-section > .steps, section > .window {
+  }
+  
+  section > .steps, section > .window {
     flex-basis: 50%;
-}
-
-button {
-    appearence: none;
+  }
+  
+  button {
+    appearance: none;
     background: transparent;
     border: none;
     color: #ccc;
     font-size: 30vmin;
     font-weight: 300;
     cursor: pointer;
-}
-
-button:focus {outline:0;}
-
-a {
+  }
+  button:focus {outline:0;}
+  
+  a {
     color: #a7ff00;
-}
-
-.steps p:not(:first-child){
+  }
+  
+  .steps {
+    padding: 0 2rem;
+    font-size: 1.1em;
+  }
+  
+  .steps p:not(:first-child) {
     display: none;
-}
-
-.box .boxposition {
+  }
+  
+  .box, .boxPosition {
     position: absolute;
     top: 8px;
     left: 8px;
-    width: 10vw;
-    height: 10vh;
-    box-size: content-box;
-}
-
-.boxposition {
+    height: 10vmin;
+    width: 10vmin;
+    box-sizing: content-box;
+  }
+  
+  .boxPosition {
     top: 6px;
     left: 6px;
     visibility: hidden;
     opacity: 0;
-}
-
-.box {
+  }
+  
+  .box {
     background-color: black;
     text-align: center;
     line-height: 10vmin;
     font-size: 3.5vmin;
     color: #88ce02;
     font-weight: 400;
-    border: 1vmin;
-}
-
-.initialposition {
+    border-radius: 1vmin;
+  }
+  
+  .initialPosition {
     border: 2px dashed green;
-}
-
-.finalposition {
+  }
+  
+  .finalPosition {
     border: 2px dashed red;
-}
-
-.finalcontainer {
+  }
+  
+  .finalContainer {
     width: 36vmin;
     height: 36vmin;
     position: absolute;
     bottom: 0;
     right: 0;
     background-color: #bfaecd;
-    transform: translate(15vmin, -12vmin) scale(1.2) rotate(-30deg);
+    transform: translate(15vmin, -12vmin) scale(1.5) rotate(-30deg);
     color: white;
     padding: 1vmin;
     font-size: 3vmin;
     overflow: visible;
-}
-
-.logo {
+  }
+  .logo {
     position: absolute;
     width: 60px;
     bottom: 20px;
     right: 30px;
-}
-
-@media (max-width: 700px){
+  }
+  
+  @media (max-width: 700px) { 
     body {
-        font-size: 0.9em;
+      font-size: 0.9em;
     }
-}
-
+  }

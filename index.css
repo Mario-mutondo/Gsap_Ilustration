@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+    overflow: scroll;
+    flex-direction: column
+}
+
+svg {
+    border: solid 2px #fff;
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    border: solid 2px white;
+    width: 70vw;
+    height: 70vh;
+    margin: 5px 10px 20px 7px;
+    container-type: inline-size;
+}
+.blue {
+    opacity: 0;
+    align-self: flex-end;
+}
+.boxgreen {
+    width: 150px;
+    height: 150px;
+    background: #00e600;
+    border-radius: 5px;
+    /* z-index: -999; */
+}
+.circleblue {
+    width: 150px;
+    height: 150px;
+    background: #3333cc;
+    border-radius: 50%;
+    /* z-index: -999; */
+}
+
+.container--large {
+    width: 60vw;
+}
+

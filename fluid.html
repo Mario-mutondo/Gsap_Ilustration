@@ -6,50 +6,33 @@
     </head>
 
     <body>
-        <section>
-            <button id="prev">&Isaquo</button>
-            
-            <div class="window">
-                <div class="boxposition initialposition"></div>
-                <div class="box4"></div>
-                <div class="final">new Container <div class="boxposition finalposition"></div></div>
-            </div>
+        <section id="flip" data-state="initial">
+          <button id="prev">&lsaquo;</button>
 
-            <div class="steps">
-                <p>
-                    If we reparent the black &lt;div&gt; into a new rotated &amp; scaled container (altering the DOM structure), how could we animate there seamlessly? Use the 
-                    "FLIP" animation technique! Press the right arrow to begin.
-                </p>
+          <div class="window">
+            <div class="boxPosition initialPosition"></div>
+            <div class="box">Flip</div>
+            <div class="finalContainer">new container<div class="boxPosition finalPosition"></div></div>
+          </div>
 
-                <p>
-                    <strong>"First";</strong> get the initial state <br>
-                    <code>
-                        cost stat = <a href="https://greensock.com/docs/v3/Plugins/Flip/static.getState()">Flip.getState(targets)></a>
-                    </code>
-                </p>
+          <div class="steps">
+            <p>If we reparent the black &lt;div&gt; into a new rotated &amp; scaled container (altering the DOM structure), how could we animate there seamlessly? Use the "FLIP" animation technique! Press the right arrow to begin.</p>
 
-                <p>
-                    <strong>"Invert"</strong>make the element <i>apper</i> in its previous position/size
-                    by applying offset instantly.
-                    that what it <i>look</i> like it hashn't moved yet.
-                    <i>Note: we animate this step in the  demo  to 
-                        ilustrate what normally happen imediately
-                    </i>
-                </p>
+            <p><strong>"First":</strong> Get the initial state.<br><code>const state = <a href="https://greensock.com/docs/v3/Plugins/Flip/static.getState()">Flip.getState(targets)</a></code></p>
+            <p><strong>"Last":</strong> Put elements in their final state. In this case we'll place the element in the new container &lt;div&gt; which results in a totally different position, scale, and rotation.</p>
+            <p><strong>"Invert":</strong> Make the element <i>appear</i> in its previous position/size by applying offsets instantly. That way, it <i>looks</i> like it hasn't moved yet. <i>Note: we animate this step in the demo to illustrate what normally happens immediately.</i></p>
+            <p><strong>"Play":</strong> Animate the removal of those offsets.<br>
+              <code><a href="https://greensock.com/docs/v3/Plugins/Flip/static.from()">Flip.from(state, options)</a></code> returns a GSAP timeline so you can add other animations, control it, etc.
+            </p>
 
-                <p>
-                    <strong>"plays"</strong> animate the remova of those offset.<br>
-                    <code><a href="https://greensock.com/docs/v3/Plugins/Flip/static.from()">Flip.from(state, options)></a></code>
-                    return a Gsap timeline so you can add other animation, control it, etc.
-                </p>
+            <p>GSAP's <a href="https://greensock.com/docs/v3/Plugins/Flip">Flip Plugin</a> makes this a breeze! </p>
+          </div>
 
-                <p>
-                    GSAP'S <a href="https://greensock.com/docs/v3/Plugins/Flip">Flip Plugin</a>
-                    makes this a breeze!
-                </p>
-            </div>
-            <button id="next">&rsaquo;</button>
+          <button id="next">&rsaquo;</button>
         </section>
         <a href="https://greensock.com/"><img src="https://assets.codepen.io/16327/hero-logo.svg" class="logo" /></a>
-    </body>
+                <a href="https://greensock.com/"><img src="https://assets.codepen.io/16327/hero-logo.svg" class="logo" /></a>
+
+        <script type="module" src="fluid.js"></script>
+  </body>
 </html>
